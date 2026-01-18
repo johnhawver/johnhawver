@@ -1,6 +1,6 @@
 # Hello! I'm John 
 
-I'm a computer engineering student who builds systems at the intersection of
+I'm a computer engineering student at the University of Michigan who builds systems and workflows using
 algorithms, data, and real-world constraints.
 
 I’m especially interested in:
