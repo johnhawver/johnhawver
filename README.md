@@ -4,7 +4,7 @@ I'm a computer engineering student at the University of Michigan who builds syst
 algorithms, data, and real-world constraints.
 
 I’m especially interested in:
-- Product-driven engineering
+- Product/service-driven engineering
 - Turning data into tools
 - Building MVPs
 
