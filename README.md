@@ -11,8 +11,8 @@ I’m especially interested in:
 ## What I'm building
 - Rule-based fraud detection systems (C++)
 - Environmental and geospatial analysis tools (MATLAB)
-- Route optimization and planning algorithms
-- Radiation tests and tumor detection systems
+- Route optimization and planning algorithms (C++)
+- Radiation tests and tumor detection systems (MATLAB)
 
 ## Featured Projects
 - **Fraud Detection System** — interpretable NLP-style scoring pipeline in C++
