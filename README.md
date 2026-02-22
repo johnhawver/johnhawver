@@ -6,7 +6,6 @@ algorithms, data, and real-world constraints.
 I’m especially interested in:
 - Product/service-driven engineering
 - Turning data into tools
-- Building MVPs
 
 ## What I'm building
 - Rule-based fraud detection systems (C++)
