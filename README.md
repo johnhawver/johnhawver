@@ -1,4 +1,4 @@
-# Hello — I'm John Hawver
+# Hello, I'm John
 
 I’m a Computer Engineering student at the University of Michigan focused on building reliable, data-driven systems that operate under real-world constraints.
 
