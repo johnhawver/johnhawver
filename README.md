@@ -21,12 +21,12 @@ I am a first-year Computer Engineering student at Michigan focused on systems pr
 
 ### Engineering Projects
 
-#### GraphSched — GNN + MARL Kubernetes Scheduler
-**Technical Overview:** A custom Kubernetes scheduler plugin that builds a live directed graph of pod dependencies and uses a Graph Attention Network + multi-agent PPO policy to co-optimize pod placement across all cluster nodes simultaneously.
+#### GraphSched — GNN + MARL Kubernetes Scheduler *(In Development)*
+**Technical Overview:** A custom Kubernetes scheduler plugin that builds a live directed graph of pod dependencies and uses a Graph Attention Network + multi-agent PPO policy to co-optimize pod placement across all cluster nodes.
 
-- **Technical work in:** Graph neural network inference pipeline (PyTorch Geometric), multi-agent reinforcement learning environment design (RLlib/PPO), and Kubernetes scheduler extension points (Filter + Score + Bind).
-- **Implementation:** Built a real-time pod dependency graph watcher using K8s watch streams (networkx), trained a 3-layer GAT encoder with contrastive loss on synthetic cluster graphs, and wrapped a shared PPO policy in a gRPC service called by the scheduler plugin — with a circuit breaker for fault tolerance and Prometheus/Grafana observability.
-- **Result:** Achieved measurably lower P99 scheduling latency and fewer SLO violations vs. the default kube-scheduler on Google Cluster Trace workloads; ships as a one-command Helm chart with full GitHub Actions CI.
+- **Deep technical work in:** Kubernetes internals (watch streams, scheduler extension points), graph neural network design (PyTorch Geometric), and multi-agent RL environment design (RLlib/PPO).
+- **Implementation:** Building a real-time pod dependency graph watcher using K8s watch streams, a 3-layer GAT encoder trained with contrastive loss, and a gRPC service connecting the GNN to a custom scheduler plugin.
+- **Result:** In active development — cluster setup and pod/node fundamentals complete; graph construction pipeline underway.
 - [Source](https://github.com/johnhawver/graphsched)
 
 #### Current.ai — Weather-Driven Ecommerce Marketing Platform
