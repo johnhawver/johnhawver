@@ -6,7 +6,7 @@
 
 ### Technical Profile
 
-I am a first-year Computer Engineering student at Michigan focused on systems programming and scalable backend architecture.
+I am a Computer Engineering student at Michigan focused on systems programming and scalable backend architecture.
 
 - **Current focus:** Kubernetes internals / distributed systems / real-time graph construction pipelines
 - **Current project:** [GraphSched](https://github.com/johnhawver/graphsched) — a custom Kubernetes scheduler plugin that infers live pod communication topology from runtime cluster signals and uses it to co-locate dependent pods, with zero application-side changes required
