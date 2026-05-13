@@ -1,5 +1,5 @@
 # John Hawver
-**Computer Engineering @ University of Michigan**
+**CS @ University of Michigan**
 [LinkedIn](https://www.linkedin.com/in/john-hawver/) | [Email](mailto:jnhawver@umich.edu) | [Portfolio](https://github.com/johnhawver)
 
 ---
