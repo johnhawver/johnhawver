@@ -1,6 +1,6 @@
 # John Hawver
 **CS @ University of Michigan**
-[LinkedIn](https://www.linkedin.com/in/john-hawver/) | [Email](mailto:jnhawver@umich.edu) | [Portfolio](https://github.com/johnhawver)
+[LinkedIn](https://www.linkedin.com/in/john-hawver/) | [Email](mailto:jnhawver@umich.edu)
 
 ---
 
