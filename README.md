@@ -6,30 +6,30 @@
 
 ### Technical Profile
 
-I am a Computer Science student at Michigan focused on systems programming and scalable backend architecture.
+Computer Science student at Michigan focused on systems programming and backend infrastructure.
 
-- **Current focus:** Kubernetes internals / distributed systems / real-time graph construction pipelines
-- **Current project:** [GraphSched](https://github.com/johnhawver/graphsched) — a custom Kubernetes scheduler plugin that infers live pod communication topology from runtime cluster signals and uses it to co-locate dependent pods, with zero application-side changes required
+- **Interests:** Kubernetes internals, distributed systems, real-time graph pipelines
+- **Recent project:** [GraphSched](https://github.com/johnhawver/graphsched) — a custom Kubernetes scheduler that infers which pods communicate from runtime cluster signals and co-locates them, with no changes to the workloads themselves
 
 ---
 
 ### Technical Stack
 
 - **Languages:** C++, Python, Java, TypeScript, SQL
-- **Tools/Env:** Git, Linux (Ubuntu/Fedora), Docker, AWS, GDB/Valgrind
+- **Infra/Tools:** Kubernetes, Docker, Prometheus, Grafana, Git, Linux, AWS, GDB/Valgrind
 - **Frameworks:** Node.js, FastAPI, React
 
 ---
 
 ### Engineering Projects
 
-#### GraphSched — Topology-Aware Kubernetes Scheduler *(In Development)*
+#### GraphSched — Topology-Aware Kubernetes Scheduler
 
-**Technical Overview:** A custom Kubernetes scheduler plugin that constructs a live directed graph of pod dependencies from runtime cluster signals (Service selectors, PVC mounts, env var references) and uses topology-aware heuristic scoring to co-locate communicating pods — improving placement quality with no changes to existing workloads.
+A custom Kubernetes scheduler that builds a live dependency graph of pods from runtime signals (Service selectors and environment-variable references) and scores nodes to co-locate communicating pods. It needs no affinity annotations on existing workloads.
 
-- **Deep technical work in:** Kubernetes scheduler internals (Filter / Score / Bind extension points), real-time concurrent watch stream pipelines, thread-safe graph maintenance with networkx, and gRPC service design.
-- **Implementation:** Three concurrent K8s API watch streams (pods, services, PVCs) maintain a live `networkx.DiGraph`; a custom scorer computes `0.7 × co-location fraction + 0.3 × resource balance` per candidate node; Prometheus + Grafana expose scheduling latency and live co-location rate; full stack ships as a Helm chart with GitHub Actions CI.
-- **Result:** In active development 
+- **How it works:** Three concurrent Kubernetes watch streams (pods, Services, PVCs) maintain a thread-safe `networkx` dependency graph. For each pending pod, the scheduler scores every node as `0.7 × co-location fraction + 0.3 × resource balance` and binds pods in dependency order so a pod's dependencies are already placed when it's scored.
+- **Engineering:** Concurrent watch-stream pipeline, batch scheduling with retries and stale-cache fallbacks, Prometheus metrics on a `/metrics` endpoint, a Grafana dashboard, a 36-test pytest suite, and GitHub Actions CI.
+- **Result:** Co-locates 100% of dependent pod pairs on chain and hub workloads, versus ~17–25% for the default scheduler, benchmarked over a 3-run matrix on a 4-worker kind cluster. Scheduling latency is a measured trade-off; the scheduler's own decision time is ~50–100ms per pod. Tagged v0.1.0.
 - [Source](https://github.com/johnhawver/graphsched)
 
 ---
