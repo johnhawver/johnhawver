@@ -1,6 +1,6 @@
 # John Hawver
 
-**B.S.E. Computer Science, Mathematics minor — University of Michigan** · Expected Dec. 2028
+**B.S.E. Computer Science, Mathematics minor — University of Michigan** · Class of 2029
 [Email](mailto:jnhawver@umich.edu) · [LinkedIn](https://www.linkedin.com/in/john-hawver/)
 
 I build low-latency systems and the tooling that proves they work. Most of my projects start
