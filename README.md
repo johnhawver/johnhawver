@@ -3,13 +3,12 @@
 **B.S.E. Computer Science, Mathematics minor — University of Michigan** · Class of 2029
 [Email](mailto:jnhawver@umich.edu) · [LinkedIn](https://www.linkedin.com/in/john-hawver/)
 
-I build low-latency systems and the tooling that proves they work. Most of my projects start
-from a measurement problem: what is this system's actual p99, where does the time go, and how
-do I keep a change from silently breaking correctness. I care about results that survive
-scrutiny, so each project below documents its methodology and its caveats alongside its numbers.
+Computer science student at Michigan working on backend and systems software in C++, Python, and
+Java, from matching-engine performance work to full-stack product engineering. The numbers in
+the projects below came out of the benchmark and validation harnesses built alongside them, under
+conditions each README states. 
 
-Currently seeking **Summer 2027 software engineering internships** — systems, infrastructure,
-and trading/fintech.
+Currently seeking Summer 2027 Software Engineering Internships.
 
 ---
 
